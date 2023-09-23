@@ -1,0 +1,18 @@
+tensorflow
+pandas
+dvc
+notebook
+numpy
+matplotlib
+seaborn
+python-box ==6.0.2
+pyYAML #to read .yaml file
+tqdm # to see the progress bar
+ensure==1.0.2
+joblib 
+types-pyYAML
+scipy
+# For Web application
+Flask
+Flask-Cors
+-e .

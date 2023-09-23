@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 import logging
 
-logging.basicConfig(level=logging.INFO,format='[%(asctime)s]:%(message)s:')
+logging.basicConfig(level=logging.INFO,format='[%(asctime)s]:%(message)s:') # WHile creating file, it will return ascii time and the file name in terminal
 
 project_name="cnnClassifier"
 
@@ -22,7 +22,8 @@ list_of_files=[
     "params.yaml",
     "requirements.txt",
     "setup.py",
-    "research/trails.ipynb"
+    "research/trails.ipynb",
+    "templates/index.html" #for cretaing web app using flask
     ]
 
 for filepath in list_of_files:
