@@ -1,26 +1,58 @@
+# import setuptools
+# with open("README.md","r", encoding="utf-8") as f:
+#     long_description= f.read()
+
+# __version__="0.0.0"
+
+# REPO_NAME="Chicken-Disease-Classification"
+# AUTHOR_USER_NAME= "maytaez"
+# SRC_REPO="cnnClassifier"
+# AUTHOR_EMAIL="satyam.pant@gamil.com"
+
+# setuptools.setup(
+#     name=SRC_REPO,
+#     version=__version__,
+#     author=AUTHOR_USER_NAME,
+#     description="Small python package for CNN app",
+#     long_description=long_description,
+#     long_description_content="text/markdown",
+#     url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
+#     project_urls={
+#         "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
+
+#     },
+#     package_dir={"":"src"},
+#     packages=setuptools.find_packages(where="src")
+# )
+
+
+
 import setuptools
-with open("README.md","r", encoding="utf-8") as f:
-    long_description= f.read()
 
-__version__="0.0.0"
+with open("README.md", "r", encoding="utf-8") as f:
+    long_description = f.read()
 
-REPO_NAME="Chicken-Disease-Classification"
-AUTHOR_USER_NAME= "maytaez"
-SRC_REPO="cnnClassifier"
-AUTHOR_EMAIL="satyam.pant@gamil.com"
+
+__version__ = "0.0.0"
+
+REPO_NAME = "Chicken-Disease-Classification"
+AUTHOR_USER_NAME = "maytaez"
+SRC_REPO = "cnnClassifier"
+AUTHOR_EMAIL = "satyam.pant@gmail.com"
+
 
 setuptools.setup(
     name=SRC_REPO,
     version=__version__,
     author=AUTHOR_USER_NAME,
-    description="Small python package for CNN app",
+    author_email=AUTHOR_EMAIL,
+    description="A small python package for CNN app",
     long_description=long_description,
     long_description_content="text/markdown",
     url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
     project_urls={
-        "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues"
-
+        "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
     },
-    package_dir={"":"src"},
-    packages=setuptools.find_packages(where="src")
+    package_dir={"": "src"},
+    packages=setuptools.find_packages(where="src.")
 )
